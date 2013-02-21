@@ -63,14 +63,24 @@ td { vertical-align: top; }
 
 /*===== App =============================================*/
 html, body, .presentation, .slide, .caroufredsel_wrapper, .canvas { height: 100% !important;  }
-body { margin: 0; padding: 0; font-family: Arial, sans-serif; color: #444; }
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+    color: #444; 
+}
 p { margin: 0; }
 img { max-width: 100%; }
 a, a:visited { color: #006699; }
+
+.canvas {
+    padding: 1em;
+}
+
 .slide { float: left; overflow: auto; }
-.slide h1 { font-size: 2em; margin: 0; font-weight: normal; }
-.slide-wrap { width: 100%; display: table; }
-.slide-content { display: table-cell; vertical-align: middle; text-align: center; }
+.slide h1 { font-size: 1.5em; margin: 0; font-weight: normal; }
+.slide-wrap { width: 100%;}
+.slide-content { vertical-align: middle; text-align: center; }
 .standalone-content { text-align: center;}
 h2 { width: 80%; margin: 20px auto; color: #888; }
 .caroufredsel_wrapper { position: relative; z-index: 1; }
@@ -87,11 +97,14 @@ h2 { width: 80%; margin: 20px auto; color: #888; }
 	text-indent: -999em;
 }
 .presentation-nav a.selected { background: rgba(0,0,0,.5)}
-ul { max-width: 80%; margin: 0 auto; text-align: left; font-size: 1.3em; }
+ul {  
+    margin: 0 auto; 
+    text-align: left; 
+    padding: 0 0 0 1.5em;
+}
 li { margin: 20px 0; }
-.slide2 ul, .slide7 ul, .slide14 ul { max-width: 60%; }
-.slide5 ul { font-size: 1.2em; }
-.slide5 li, .slide7 li { margin: 15px 0; }
+
+
 ul ul { font-size: 0.8em; }
 ul ul li { margin: 10px 0; }
 
@@ -104,12 +117,32 @@ ul ul li { margin: 10px 0; }
 .column4 { background: #bbb; width: 20%; float: right; height: 15em; margin: 0 0 .5em 0; }
 .column5 { background: #ccc; clear: both; height: 5em; }
 
+
+.slide3 img {
+    display: none;
+}
+
+img.starbucks-iphone {
+    display: block;
+}
+
+
+@media screen and (min-width: 161px) {
+    body { }
+    .presentation-nav { bottom: .5em; }
+    .presentation-nav a { width: .7em; height: .7em; margin: 0 .2em; }
+}
+
+
+@media screen and (min-width: 45em) {
+    h1 { font-size: 2em;}
+}
+
 /* iMac ------------------------------------------------------- */
-@media screen and (width: 960px) 
+@media screen and (min-width: 960px) 
 {
     body { font-size: 1.4em; }
     .slide h1:first-child { margin-top: 40px; }
-    .cover-image { max-height: 380px; }
     .starbucks-imac { display: block !important; }
     ul ul { font-size: 0.7em; }
 }
@@ -119,6 +152,7 @@ ul ul li { margin: 10px 0; }
     .column3 { width: 78%; float: right; }
     .column4 { width: auto; clear: both; float: none; height: 3em; }
     .column5 { clear: both; height: 5em; }
+
 }
 
 @media screen and (max-width: 320px) 
@@ -131,7 +165,6 @@ ul ul li { margin: 10px 0; }
 {
     body { font-size: 1em; }
     .slide h1:first-child { margin-top: 40px; }
-    .cover-image { max-height: 330px; }
     .starbucks-imac { display: block !important; }
 
 }
@@ -140,7 +173,6 @@ ul ul li { margin: 10px 0; }
 @media screen and (width: 512px) 
 {
     .slide h1:first-child { margin-top: 40px; }
-    .cover-image { max-height: 260px; }
     .starbucks-imac { display: block !important; }
 }
 
@@ -155,19 +187,5 @@ ul ul li { margin: 10px 0; }
 @media screen and (width: 240px) 
 {
     body { font-size: 0.8em; }
-    .cover-image { max-height: 70px; }
     .starbucks-iphone-landscape { display: block !important; }
-}
-
-/* iPhone (portrait) ------------------------------------------------------- */
-@media screen and (width: 160px) 
-{
-    body { font-size: 0.7em; }
-    .cover-image { max-height: 90px; }
-    .starbucks-iphone { display: block !important; }
-}
-@media screen and (max-width: 320px) {
-    body { font-size: .9em; }
-    .presentation-nav { bottom: .5em; }
-    .presentation-nav a { width: .7em; height: .7em; margin: 0 .2em; }
 }
