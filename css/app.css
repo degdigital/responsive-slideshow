@@ -68,19 +68,21 @@ body {
     padding: 0; 
     font-family: Arial, sans-serif; 
     color: #444; 
+    overflow:hidden;
 }
 p { margin: 0; }
 img { max-width: 100%; }
 a, a:visited { color: #006699; }
 
 .canvas {
-    padding: 1em;
+    padding: 0;
 }
 
 .slide { float: left; overflow: auto; }
-.slide h1 { font-size: 1.5em; margin: 0; font-weight: normal; }
+.slide h1 { font-size: 1.5em; margin: 0 0 1em; font-weight: normal; text-align: center; }
 .slide-wrap { width: 100%;}
-.slide-content { vertical-align: middle; text-align: center; }
+.slide-content { vertical-align: middle; text-align: center; padding: 1em; }
+.slide-content ol { text-align: left; }
 .standalone-content { text-align: center;}
 h2 { width: 80%; margin: 20px auto; color: #888; }
 .caroufredsel_wrapper { position: relative; z-index: 1; }
@@ -107,6 +109,11 @@ li { margin: 20px 0; }
 
 ul ul { font-size: 0.8em; }
 ul ul li { margin: 10px 0; }
+
+ul.list li {
+    display: inline-block;
+    width: 48%;
+}
 
 .columns { padding: 1em; color: #fff; font-weight: bold; text-align: center; }
 .columns span { position: absolute; top: 50%; left: 50%; margin-top: -.4em; }
