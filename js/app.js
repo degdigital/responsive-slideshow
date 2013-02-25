@@ -7,6 +7,7 @@
 		next: "right",
         circular: false,
 		pagination: '.presentation-nav',
+        cookie: 'true',
 		scroll : { wipe: true }
 	});
 

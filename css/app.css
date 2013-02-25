@@ -151,6 +151,7 @@ img.starbucks-iphone {
     body { font-size: 1.4em; }
     .slide h1:first-child { margin-top: 40px; }
     .starbucks-imac { display: block !important; }
+    img.starbucks-iphone { display: none; }
     ul ul { font-size: 0.7em; }
 }
 
