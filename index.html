@@ -8,6 +8,16 @@
 	<link rel="stylesheet" type="text/css" href="css/app.css" />
 </head>
 <body>
+    <div id="floatingCirclesG">
+        <div class="f_circleG" id="frotateG_01"></div>
+        <div class="f_circleG" id="frotateG_02"></div>
+        <div class="f_circleG" id="frotateG_03"></div>
+        <div class="f_circleG" id="frotateG_04"></div>
+        <div class="f_circleG" id="frotateG_05"></div>
+        <div class="f_circleG" id="frotateG_06"></div>
+        <div class="f_circleG" id="frotateG_07"></div>
+        <div class="f_circleG" id="frotateG_08"></div>
+    </div>
 	<div class="canvas group">
 		<div class="presentation group">
 			<div class="slide slide1" id="intro">
@@ -27,7 +37,7 @@
                             <li>Provides an optimal viewing experience for websites across a range of devices, large and small</li>
                             <li>The user interface adapts to the size of the screen via a fluid layout, flexible images and CSS Media Queries</li>
                             <li>The experience is optimized for device capabilities (touch)</li>
-                            <li>The first ever website was responsive: <a href="http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.htm">http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html</a>"</li>
+                            <li>The first ever website was responsive: <a href="http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html">http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html</a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,6 +99,25 @@
                     </div>
                 </div>
             </div>
+            <div class="slide" id="build">
+                <div class="slide-wrap">
+                    <div class="slide-content">
+                        <h1>What can I do to get you into a responsive website today?</h1>
+                        <ol>
+                            <li><strong>From Scratch.</strong> The most efficient and preferred way to build a responsive website is from the ground up.  This option takes advantage of using a proper project workflow and making sure the user gets the best experience.</li>
+                            <li><strong>Retrofit.</strong>  Can provide a better user experience for smaller devices on an existing website.</li>
+                            <li><strong>Start with an "m dot".</strong>  Leave the existing desktop website where it is.  Create an m.* mobile site and make it responsive to eventually fade it into all devices.  People magazine took this approach. <a href="http://m.people.com" target="_blank">Mobile</a> | <a href="http://www.people.com" target="_blank">Desktop</a> </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide14" id="process">
+                <div class="standalone-content">
+                    <h1>Changes in a Responsive Process</h1>
+                    <p><a href="img/process.gif" target="_blank"><img src="img/process.gif" alt="" /></a></p>
+                    <p><a href="http://responsiveprocess.com/" target="_blank">Responsive Process</a></p>
+                </div>
+            </div>
             <div class="slide slide5" id="responsibly">
                 <div class="slide-wrap">
                     <div class="slide-content">
@@ -113,39 +142,6 @@
                     </div>
                 </div>
             </div>
-            <div class="slide" id="build">
-                <div class="slide-wrap">
-                    <div class="slide-content">
-                        <h1>What can I do to get you into a responsive website today?</h1>
-                        <ol>
-                            <li><strong>From Scratch.</strong> The most efficient and preferred way to build a responsive website is from the ground up.  This option takes advantage of using a proper project workflow and making sure the user gets the best experience.</li>
-                            <li><strong>Retrofit.</strong>  Can provide a better user experience for smaller devices on an existing website.</li>
-                            <li><strong>Start with an "m dot".</strong>  Leave the existing desktop website where it is.  Create an m.* mobile site and make it responsive to eventually fade it into all devices.  People magazine took this approach. <a href="http://m.people.com" target="_blank">Mobile</a> | <a href="http://www.people.com" target="_blank">Desktop</a> </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="slide slide14" id="process">
-                <div class="standalone-content">
-                    <h1>Changes in a Responsive Process</h1>
-                    <p><a href="img/process.gif" target="_blank"><img src="img/process.gif" alt="" /></a></p>
-                    <p><a href="http://responsiveprocess.com/" target="_blank">Responsive Process</a></p>
-                </div>
-            </div>
-            <div class="slide slide15" id="deliverables">
-                <div class="slide-wrap">
-                    <div class="slide-content">
-                        <h1>Deliverables</h1>
-                        <ul>
-                            <li>Strategic Direction Document</li>
-                            <li>Greybox Prototypes</li>
-                            <li>Visual Design (Static Mock-ups w/ Priority Guide, Style Tiles, Other?)</li>
-                            <li>Final Build</li>
-                            <li>Other Related Documenation (Styleguides, Etc.)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             <div class="slide" id="resources">
                 <div class="slide-wrap">
                     <div class="slide-content">
@@ -156,6 +152,7 @@
                             <li><a href="http://alistapart.com/article/responsive-web-design">http://alistapart.com/article/responsive-web-design</a></li>
                             <li><a href="http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/">http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/</a></li>
                             <li><a href="http://responsiveprocess.com/">http://responsiveprocess.com/</a></li>
+                            <li><a href="http://www.lukew.com/ff/entry.asp?1691">http://www.lukew.com/ff/entry.asp?1691</a></li>
                             <li>Subscribe to <a href="http://www.netmagazine.com">.NET Magazine</a></li>
                         </ul>
                     </div>
@@ -165,6 +162,7 @@
 	</div>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
 	<script src="js/jquery.touchwipe.js"></script>
     <script src="js/jquery.carouFredSel.js"></script>
 	<script src="js/app.js"></script>
