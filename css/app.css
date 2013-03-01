@@ -62,15 +62,17 @@ td { vertical-align: top; }
 
 
 /*===== App =============================================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
 html, body, .presentation, .slide, .caroufredsel_wrapper, .canvas { height: 100% !important;  }
-body { 
-    margin: 0; 
-    padding: 0; 
-    font-family: Arial, sans-serif; 
-    color: #444; 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #444;
     overflow:hidden;
 }
-p { margin: 0; }
 img { max-width: 100%; }
 a, a:visited { color: #006699; }
 
@@ -79,7 +81,15 @@ a, a:visited { color: #006699; }
 }
 
 .slide { float: left; overflow: auto; }
-.slide h1 { font-size: 1.5em; margin: 0 0 1em; font-weight: normal; text-align: center; }
+.slide h1 { font-size: 1.5em; margin: 0.5em 0 1em 0; font-weight: normal; text-align: center; }
+.slide.slide1 h1 { margin: 0; }
+#media-queries h1 { margin-bottom: 0; }
+.slide p { margin: 0; }
+.slide.slide2 p, .slide.slide51 p, .slide.slide52 p { margin: 1.5em 0; }
+.slide.slide6 p { margin: 1.5em 0 0 0; }
+.slide.slide61 p { margin: 1em 0 0 0; }
+.slide p.small { font-size: 0.8em; margin: 0; }
+.slide img { margin: 0 auto; }
 .slide-wrap { width: 100%;}
 .slide-content { vertical-align: middle; text-align: center; padding: 1em; }
 .slide-content ol { text-align: left; }
@@ -99,9 +109,9 @@ h2 { width: 80%; margin: 20px auto; color: #888; }
 	text-indent: -999em;
 }
 .presentation-nav a.selected { background: rgba(0,0,0,.5)}
-ul {  
-    margin: 0 auto; 
-    text-align: left; 
+ul {
+    margin: 0 auto;
+    text-align: left;
     padding: 0 0 0 1.5em;
 }
 li { margin: 20px 0; }
@@ -110,6 +120,11 @@ li { margin: 20px 0; }
 ul ul { font-size: 0.8em; }
 ul ul li { margin: 10px 0; }
 
+ul.list {
+    padding: 0;
+    text-align: center;
+    max-width: 30em;
+}
 ul.list li {
     display: inline-block;
     width: 48%;
@@ -123,6 +138,12 @@ ul.list li {
 .column3 { background: #aaa; width: 58%; float: left; height: 15em; margin: 0 0 .5em 0; }
 .column4 { background: #bbb; width: 20%; float: right; height: 15em; margin: 0 0 .5em 0; }
 .column5 { background: #ccc; clear: both; height: 5em; }
+
+#feature-detection { text-align: center; }
+#feature-detection div {
+    display: inline-block;
+    font-size: 3em;
+    padding: 0 0.1em;
 
 
 #floatingCirclesG{
@@ -309,7 +330,6 @@ img.starbucks-iphone {
     display: block;
 }
 
-
 @media screen and (min-width: 161px) {
     body { }
     .presentation-nav { bottom: .5em; }
@@ -321,17 +341,13 @@ img.starbucks-iphone {
     h1 { font-size: 2em;}
 }
 
-/* iMac ------------------------------------------------------- */
-@media screen and (min-width: 960px) 
+@media screen and (min-width: 960px)
 {
     body { font-size: 1.4em; }
-    .slide h1:first-child { margin-top: 40px; }
-    .starbucks-imac { display: block !important; }
-    img.starbucks-iphone { display: none; }
     ul ul { font-size: 0.7em; }
 }
 
-@media screen and (max-width: 720px) 
+@media screen and (max-width: 720px)
 {
     .column3 { width: 78%; float: right; }
     .column4 { width: auto; clear: both; float: none; height: 3em; }
@@ -339,37 +355,8 @@ img.starbucks-iphone {
 
 }
 
-@media screen and (max-width: 320px) 
+@media screen and (max-width: 320px)
 {
     .column3 { width: 100%; float: none; }
     .column2 { width: auto; clear: both; float: none; height: 3em; }
-}
-/* MacBook ------------------------------------------------------- */
-@media screen and (width: 720px) 
-{
-    body { font-size: 1em; }
-    .slide h1:first-child { margin-top: 40px; }
-    .starbucks-imac { display: block !important; }
-
-}
-
-/* iPad ------------------------------------------------------- */
-@media screen and (width: 512px) 
-{
-    .slide h1:first-child { margin-top: 40px; }
-    .starbucks-imac { display: block !important; }
-}
-
-/* iPad (portrait) ------------------------------------------------------- */
-@media screen and (width: 384px) 
-{
-    .slide h1:first-child { margin-top: 40px; }
-    .starbucks-ipad-portrait { display: block !important; }
-}
-
-/* iPhone ------------------------------------------------------- */
-@media screen and (width: 240px) 
-{
-    body { font-size: 0.8em; }
-    .starbucks-iphone-landscape { display: block !important; }
 }
