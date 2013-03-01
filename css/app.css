@@ -85,7 +85,10 @@ a, a:visited { color: #006699; }
 .slide.slide1 h1 { margin: 0; }
 #media-queries h1 { margin-bottom: 0; }
 .slide p { margin: 0; }
-.slide.slide2 p { margin: 1.5em 0; }
+.slide.slide2 p, .slide.slide51 p, .slide.slide52 p { margin: 1.5em 0; }
+.slide.slide6 p { margin: 1.5em 0 0 0; }
+.slide.slide61 p { margin: 1em 0 0 0; }
+.slide p.small { font-size: 0.8em; margin: 0; }
 .slide img { margin: 0 auto; }
 .slide-wrap { width: 100%;}
 .slide-content { vertical-align: middle; text-align: center; padding: 1em; }
