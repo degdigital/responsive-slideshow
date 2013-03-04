@@ -18,6 +18,8 @@ a, a:visited { color: #006699; }
 
 .canvas {
     padding: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .slide { float: left; overflow: auto; }
@@ -31,7 +33,7 @@ a, a:visited { color: #006699; }
 .slide p.small { font-size: 0.8em; margin: 0; }
 .slide img { margin: 0 auto; }
 .slide-wrap { width: 100%;}
-.slide-content { vertical-align: middle; text-align: center; padding: 1em; }
+.slide-content { vertical-align: middle; text-align: center; padding: 1em; position: relative; }
 .slide-content ol { text-align: left; }
 .standalone-content { text-align: center;}
 h2 { width: 80%; margin: 20px auto; color: #888; }
@@ -118,9 +120,46 @@ ul.list li {
 #roadblocks img { max-width: 20%; }
 #mobile-or-responsive img { max-width: 42%; }
 
+#impact h2 {
+    font-size: 1.3em;
+    font-weight: normal;
+    color: red;
+    margin-bottom: 0;
+}
+#impact p { margin: 0 0 2em; }
+
 img.starbucks-iphone {
     display: block;
 }
+
+.ribbon {
+  background-color: #a00;
+  overflow: hidden;
+  /* top left corner */
+  position: absolute;
+  z-index: 2em;
+  right: -3em;
+  top: 2.5em;
+  /* 45 deg ccw rotation */
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  /* shadow */
+  -moz-box-shadow: 0 0 1em #888;
+  -webkit-box-shadow: 0 0 1em #888;
+}
+.ribbon a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+  margin: 0.05em 0 0.075em 0;
+  padding: 0.5em 3.5em;
+  text-align: center;
+  text-decoration: none;
+  /* shadow */
+  text-shadow: 0 0 0.5em #444;
+}
+
 
 @media screen and (min-width: 161px) {
     body { }
