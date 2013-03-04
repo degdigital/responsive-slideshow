@@ -21,7 +21,7 @@ a, a:visited { color: #006699; }
 }
 
 .slide { float: left; overflow: auto; }
-.slide h1 { font-size: 1.5em; margin: 0.5em 0 1em 0; font-weight: normal; text-align: center; }
+.slide h1 { font-size: 1.5em; margin: 0.5em 0 .5em 0; font-weight: normal; text-align: center; }
 .slide.slide1 h1 { margin: 0; }
 #media-queries h1 { margin-bottom: 0; }
 .slide p { margin: 0; }
@@ -109,6 +109,15 @@ ul.list li {
     text-shadow: 1px 1px 0 #666;
     margin: .2em 0;
 }
+
+#why img { max-width: 34%; }
+#content-first img { max-width: 20%; }
+#mobile-first img { max-width: 40%; }
+#touch-friendly img { max-width: 36%;}
+#process img { max-width: 96%; }
+#roadblocks img { max-width: 20%; }
+#mobile-or-responsive img { max-width: 42%; }
+
 img.starbucks-iphone {
     display: block;
 }
@@ -142,4 +151,7 @@ img.starbucks-iphone {
 {
     .column3 { width: 100%; float: none; }
     .column2 { width: auto; clear: both; float: none; height: 3em; }
+}
+@media screen and (orientation:landscape) {
+    img { max-width: 50%; }
 }
