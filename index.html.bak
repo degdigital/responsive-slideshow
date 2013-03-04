@@ -1,35 +1,35 @@
-
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <title>Responsive Design</title>
-    <link rel="stylesheet" type="text/css" href="css/app.css" />
+	<title>Responsive Design</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
 </head>
 <body>
-    <div class="canvas group">
-        <div class="presentation group">
-            <div class="slide slide1" id="intro">
-                <div class="slide-wrap">
-                    <div class="slide-content">
+    <div id="floatingCirclesG">
+        <div class="f_circleG" id="frotateG_01"></div>
+        <div class="f_circleG" id="frotateG_02"></div>
+        <div class="f_circleG" id="frotateG_03"></div>
+        <div class="f_circleG" id="frotateG_04"></div>
+        <div class="f_circleG" id="frotateG_05"></div>
+        <div class="f_circleG" id="frotateG_06"></div>
+        <div class="f_circleG" id="frotateG_07"></div>
+        <div class="f_circleG" id="frotateG_08"></div>
+    </div>
+	<div class="canvas group">
+		<div class="presentation group">
+			<div class="slide slide1" id="intro">
+				<div class="slide-wrap">
+					<div class="slide-content">
                         <img class="cover-image" src="img/responsive-design3.png" />
-                        <h1>Responsive Design</h1>
+						<h1>Responsive Design</h1>
                         <p>creating future friendly design systems</p>
-                    </div>
-                </div>
-            </div>
-            <div class="slide slide2" id="did-we-break-the-web">
-                <div class="slide-wrap">
-                    <div class="slide-content">
-                        <h1>Did we break the web?</h1>
-                        <img src="img/yahoo-evolution.png" alt="Yahoo Evolution" width="600" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide slide2" id="what-is-responsive">
+					</div>
+				</div>
+			</div>
+			<div class="slide slide2" id="what-is-responsive">
                 <div class="slide-wrap">
                     <div class="slide-content">
                         <h1>What is Responsive Design?</h1>
@@ -39,21 +39,29 @@
                             <li>Provides an optimal viewing experience for websites across a range of devices, large and small</li>
                             <li>The user interface adapts to the size of the screen via a fluid layout, flexible images and CSS Media Queries</li>
                             <li>The experience is optimized for device capabilities (touch)</li>
+<<<<<<< HEAD
+                            <li>The first ever website was responsive: <a href="http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html">http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html</a></li>
+                        </ul>
+=======
                             <li>The first ever website was responsive: <a href="http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.htm">http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html</a>"</li>
                         </ul>-->
+>>>>>>> 6c6d51f174947ec560c4be332c8af61079692122
+                    </div>
+                </div>
+			</div>
+            <div class="slide slide2" id="did-we-break-the-web">
+                <div class="slide-wrap">
+                    <div class="slide-content">
+                        <h1>Did we break the web?</h1>
+                        <img src="img/yahoo-evolution.png" alt="Yahoo Evolution" width="600" />
                     </div>
                 </div>
             </div>
+
             <div class="slide slide2-5" id="media-queries">
                 <div class="slide-wrap">
                     <div class="slide-content">
                         <h1>CSS Media Queries</h1>
-                        <pre class="sample1">
-@media screen and (min-width: 960px) { }
-
-@media screen and (max-width: 720px) { }
-
-@media screen and (max-width: 320px) { }</pre>
                         <div class="columns">
                             <div class="column column1"><span>A</span></div>
                             <div class="column column2"><span>B</span></div>
@@ -68,14 +76,20 @@
                 <h1>Feature Detection</h1>
 
                 <div>
-                    <img src="img/feature-detection.jpg" />
+                    <img src="img/starbucks-ipad-portrait.png" width="400" />
                 </div>
-                <p>GPS, screen density and touch capabilities.</p>
+                <div>
+                    →
+                </div>
+                <div>
+                    <img src="img/starbucks-iphone.png" width="300" />
+                </div>
+                <p>+Geolocation</p>
             </div>
-            <div class="slide slide4" id="examples">
+			<div class="slide slide4" id="examples">
                 <div class="slide-wrap">
                     <div class="slide-content">
-                        <h1>Let's Looks At Some Examples</h1>
+				        <h1>Let's Looks At Some Examples</h1>
                         <ul class="list">
                             <li><a href="http://www.degdigital.com" target="_blank">DEG</a></li>
                             <li><a href="http://www.time.com" target="_blank">Time</a></li>
@@ -88,16 +102,17 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+			</div>
             <div class="slide slide5" id="why">
                 <div class="slide-wrap">
                     <div class="slide-content">
                         <h1>Why Use Responsive Design?</h1>
-                        <img src="img/one-content-base.png" width="600" />
                         <p>One Content Base</p>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
+=======
             <div class="slide slide51" id="why">
                 <div class="slide-wrap">
                     <div class="slide-content">
@@ -125,53 +140,6 @@
                     </div>
                 </div>
             </div>
-            <div class="slide" id="build">
-                <div class="slide-wrap">
-                    <div class="slide-content">
-                        <h1>What Can I Do To Get You Into a New<br /> Responsive Web Design Today?</h1>
-                        <img src="img/carsales.jpg" alt="" />
-                        <!--<ol>
-                            <li><strong>From Scratch.</strong> The most efficient and preferred way to build a responsive website is from the ground up.  This option takes advantage of using a proper project workflow and making sure the user gets the best experience.</li>
-                            <li><strong>Retrofit.</strong>  Can provide a better user experience for smaller devices on an existing website.</li>
-                            <li><strong>Start with an "m dot".</strong>  Leave the existing desktop website where it is.  Create an m.* mobile site and make it responsive to eventually fade it into all devices.  People magazine took this approach. <a href="http://m.people.com" target="_blank">Mobile</a> | <a href="http://www.people.com" target="_blank">Desktop</a> </li>
-                        </ol>-->
-                    </div>
-                </div>
-            </div>
-            <div class="slide" id="from-scratch">
-                <div class="slide-wrap">
-                    <div class="slide-content">
-                        <h1>Start from scratch</h1>
-                        <p>Discovery, design, development, and deployment</p>
-                    </div>
-                </div>
-            </div>
-            <div class="slide" id="retrofit">
-                <div class="slide-wrap">
-                    <div class="slide-content">
-                        <h1>Retrofit</h1>
-                        <p>Fastest and low-risk approach to create a better experience for users.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-wrap">
-                    <div class="slide-content">
-                        <h1>Start with an "m dot"</h1>
-                        <p><img src="img/people.jpg" alt="People.com"></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-wrap">
-                    <div class="slide-content">
-                        <h1>Start with an "m dot"</h1>
-                        <p><img src="img/people-responsive.jpg" alt="People.com"></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
             <div class="slide slide6" id="responsibly">
                 <div class="slide-wrap">
                     <div class="slide-content">
@@ -180,13 +148,6 @@
                             <p>Content First</p>
                             <p class="small">Determine A Content & Feature Baseline</p>
                     </div>
-                </div>
-            </div>
-            <div class="slide slide14" id="process">
-                <div class="standalone-content">
-                    <h1>Responsible Responsive Design</h1>
-                    <p><a href="img/process.gif" target="_blank"><img src="img/process.gif" alt="" /></a></p>
-                    <p>Follow a proper workflow and <a href="http://responsiveprocess.com/" target="_blank">process</a>.</p>
                 </div>
             </div>
             <div class="slide slide61" id="responsibly">
@@ -219,6 +180,51 @@
                     </div>
                 </div>
             </div>
+>>>>>>> 6c6d51f174947ec560c4be332c8af61079692122
+            <div class="slide" id="build">
+                <div class="slide-wrap">
+                    <div class="slide-content">
+                        <h1>What Can I Do To Get You Into a New<br /> Responsive Web Design Today?</h1>
+                        <img src="img/carsales.jpg" alt="" />
+                        <!--<ol>
+                            <li><strong>From Scratch.</strong> The most efficient and preferred way to build a responsive website is from the ground up.  This option takes advantage of using a proper project workflow and making sure the user gets the best experience.</li>
+                            <li><strong>Retrofit.</strong>  Can provide a better user experience for smaller devices on an existing website.</li>
+                            <li><strong>Start with an "m dot".</strong>  Leave the existing desktop website where it is.  Create an m.* mobile site and make it responsive to eventually fade it into all devices.  People magazine took this approach. <a href="http://m.people.com" target="_blank">Mobile</a> | <a href="http://www.people.com" target="_blank">Desktop</a> </li>
+                        </ol>-->
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide14" id="process">
+                <div class="standalone-content">
+                    <h1>Changes in a Responsive Process</h1>
+                    <p><a href="img/process.gif" target="_blank"><img src="img/process.gif" alt="" /></a></p>
+                    <p><a href="http://responsiveprocess.com/" target="_blank">Responsive Process</a></p>
+                </div>
+            </div>
+            <div class="slide slide5" id="responsibly">
+                <div class="slide-wrap">
+                    <div class="slide-content">
+                        <h1>Build your responsive site responsibly</h1>
+                        <ul>
+                            <li>Content
+                                <ul>
+                                    <li>Responsive web designs can often consume lots of bandwidth when resources and assets aren't handled correctly.</li>
+                                    <li>Don't hide content for the sake of hiding content.</li>
+                                </ul>
+                            </li>
+                            <li>Design with touch in mind.
+                                <ul>
+                                    <li>Tap area sizes</li>
+                                    <li>Touch interactions</li>
+                                    <li>Swiping</li>
+                                </ul>
+                            </li>
+                            <li>Current technology road blocks such as existing content, CMS etc...</li>
+                            <li>Will not happen over night, do plenty of research</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="slide" id="resources">
                 <div class="slide-wrap">
                     <div class="slide-content">
@@ -229,17 +235,19 @@
                             <li><a href="http://alistapart.com/article/responsive-web-design">http://alistapart.com/article/responsive-web-design</a></li>
                             <li><a href="http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/">http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/</a></li>
                             <li><a href="http://responsiveprocess.com/">http://responsiveprocess.com/</a></li>
+                            <li><a href="http://www.lukew.com/ff/entry.asp?1691">http://www.lukew.com/ff/entry.asp?1691</a></li>
                             <li>Subscribe to <a href="http://www.netmagazine.com">.NET Magazine</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+		</div>
+	</div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="js/jquery.touchwipe.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
+	<script src="js/jquery.touchwipe.js"></script>
     <script src="js/jquery.carouFredSel.js"></script>
-    <script src="js/app.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

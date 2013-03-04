@@ -1,68 +1,8 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-audio:not([controls]) { display: none; }
-[hidden] { display: none; }
-
-html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-html, button, input, select, textarea { font-family: sans-serif; color: #222; }
-body { margin: 0; font-size: 1em; line-height: 1.4; }
-
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
-a:focus { outline: thin dotted; }
-a:hover, a:active { outline: 0; }
-abbr[title] { border-bottom: 1px dotted; }
-b, strong { font-weight: bold; }
-blockquote { margin: 1em 40px; }
-dfn { font-style: italic; }
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-ins { background: #ff9; color: #000; text-decoration: none; }
-mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
-pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-
-q { quotes: none; }
-q:before, q:after { content: ""; content: none; }
-small { font-size: 85%; }
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-dd { margin: 0 0 0 40px; }
-nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
-
-img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-svg:not(:root) { overflow: hidden; }
-figure { margin: 0; }
-
-form { margin: 0; }
-fieldset { border: 0; margin: 0; padding: 0; }
-
-label { cursor: pointer; }
-legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
-button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
-button, input { line-height: normal; }
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
-button[disabled], input[disabled] { cursor: default; }
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
-input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-textarea { overflow: auto; vertical-align: top; resize: vertical; }
-input:valid, textarea:valid {  }
-input:invalid, textarea:invalid { background-color: #f0dddd; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-td { vertical-align: top; }
-
+@import "_reset.css";
+@import "_loader.css";
 
 /*===== App =============================================*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Grand+Hotel);
 
 html, body, .presentation, .slide, .caroufredsel_wrapper, .canvas { height: 100% !important;  }
 body {
@@ -109,17 +49,16 @@ h2 { width: 80%; margin: 20px auto; color: #888; }
 	text-indent: -999em;
 }
 .presentation-nav a.selected { background: rgba(0,0,0,.5)}
+
+
 ul {
     margin: 0 auto;
     text-align: left;
     padding: 0 0 0 1.5em;
 }
 li { margin: 20px 0; }
-
-
 ul ul { font-size: 0.8em; }
 ul ul li { margin: 10px 0; }
-
 ul.list {
     padding: 0;
     text-align: center;
@@ -144,188 +83,32 @@ ul.list li {
     display: inline-block;
     font-size: 3em;
     padding: 0 0.1em;
-
-
-#floatingCirclesG{
-position:relative;
-width:128px;
-height:128px;
-position: absolute;
-top: 50%;
-left: 50%;
-margin: -64px 0 0 -64px;
--moz-transform:scale(0.6);
--webkit-transform:scale(0.6);
--ms-transform:scale(0.6);
--o-transform:scale(0.6);
-transform:scale(0.6);
-}
-
-.f_circleG{
-position:absolute;
-background-color:#FFFFFF;
-height:23px;
-width:23px;
--moz-border-radius:12px;
--moz-animation-name:f_fadeG;
--moz-animation-duration:0.64s;
--moz-animation-iteration-count:infinite;
--moz-animation-direction:linear;
--webkit-border-radius:12px;
--webkit-animation-name:f_fadeG;
--webkit-animation-duration:0.64s;
--webkit-animation-iteration-count:infinite;
--webkit-animation-direction:linear;
--ms-border-radius:12px;
--ms-animation-name:f_fadeG;
--ms-animation-duration:0.64s;
--ms-animation-iteration-count:infinite;
--ms-animation-direction:linear;
--o-border-radius:12px;
--o-animation-name:f_fadeG;
--o-animation-duration:0.64s;
--o-animation-iteration-count:infinite;
--o-animation-direction:linear;
-border-radius:12px;
-animation-name:f_fadeG;
-animation-duration:0.64s;
-animation-iteration-count:infinite;
-animation-direction:linear;
-}
-
-#frotateG_01{
-left:0;
-top:52px;
--moz-animation-delay:0.24s;
--webkit-animation-delay:0.24s;
--ms-animation-delay:0.24s;
--o-animation-delay:0.24s;
-animation-delay:0.24s;
-}
-
-#frotateG_02{
-left:15px;
-top:15px;
--moz-animation-delay:0.32s;
--webkit-animation-delay:0.32s;
--ms-animation-delay:0.32s;
--o-animation-delay:0.32s;
-animation-delay:0.32s;
-}
-
-#frotateG_03{
-left:52px;
-top:0;
--moz-animation-delay:0.4s;
--webkit-animation-delay:0.4s;
--ms-animation-delay:0.4s;
--o-animation-delay:0.4s;
-animation-delay:0.4s;
-}
-
-#frotateG_04{
-right:15px;
-top:15px;
--moz-animation-delay:0.48s;
--webkit-animation-delay:0.48s;
--ms-animation-delay:0.48s;
--o-animation-delay:0.48s;
-animation-delay:0.48s;
-}
-
-#frotateG_05{
-right:0;
-top:52px;
--moz-animation-delay:0.56s;
--webkit-animation-delay:0.56s;
--ms-animation-delay:0.56s;
--o-animation-delay:0.56s;
-animation-delay:0.56s;
-}
-
-#frotateG_06{
-right:15px;
-bottom:15px;
--moz-animation-delay:0.64s;
--webkit-animation-delay:0.64s;
--ms-animation-delay:0.64s;
--o-animation-delay:0.64s;
-animation-delay:0.64s;
-}
-
-#frotateG_07{
-left:52px;
-bottom:0;
--moz-animation-delay:0.72s;
--webkit-animation-delay:0.72s;
--ms-animation-delay:0.72s;
--o-animation-delay:0.72s;
-animation-delay:0.72s;
-}
-
-#frotateG_08{
-left:15px;
-bottom:15px;
--moz-animation-delay:0.8s;
--webkit-animation-delay:0.8s;
--ms-animation-delay:0.8s;
--o-animation-delay:0.8s;
-animation-delay:0.8s;
-}
-
-@-moz-keyframes f_fadeG{
-0%{
-background-color:#000000}
-
-100%{
-background-color:#FFFFFF}
-
-}
-
-@-webkit-keyframes f_fadeG{
-0%{
-background-color:#000000}
-
-100%{
-background-color:#FFFFFF}
-
-}
-
-@-ms-keyframes f_fadeG{
-0%{
-background-color:#000000}
-
-100%{
-background-color:#FFFFFF}
-
-}
-
-@-o-keyframes f_fadeG{
-0%{
-background-color:#000000}
-
-100%{
-background-color:#FFFFFF}
-
-}
-
-@keyframes f_fadeG{
-0%{
-background-color:#000000}
-
-100%{
-background-color:#FFFFFF}
-
 }
 
 .canvas {visibility: hidden; }
 .loaded .canvas { visibility: visible; }
 .loaded #floatingCirclesG { display: none; }
 
-.slide3 img {
-    display: none;
+#from-scratch h1 {
+    color: #999;
+    font-size: 3em;
+    text-transform: uppercase;
+    border:8px dashed #999;
+    background: #fff;
+    box-shadow: 0 0 1em #ccc;
+    padding: 1em;
+    max-width: 10em;
+    margin: 1em auto 1em;
+    font-weight: bold;
 }
 
+#retrofit h1 {
+    font-family: 'Grand Hotel';
+    font-size: 7em;
+    color: #ccc;
+    text-shadow: 1px 1px 0 #666;
+    margin: .2em 0;
+}
 img.starbucks-iphone {
     display: block;
 }
